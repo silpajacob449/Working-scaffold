@@ -1,0 +1,380 @@
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+//1. Responsive breakpoints
+// break points 
+@mixin bd-xl {
+    @media screen and (min-width: $screen-xl) {
+        @content;
+    }
+}
+
+@mixin bd-xl-bl {
+    @media screen and (max-width: $screen-xl - 1) {
+        @content;
+    }
+}
+
+@mixin bd-xxl {
+    @media screen and (min-width: $screen-xxl) {
+        @content;
+    }
+}
+
+@mixin bd-xxl-bl {
+    @media screen and (max-width: $screen-xxl - 1) {
+        @content;
+    }
+}
+
+@mixin bd-xxxl {
+    @media screen and (min-width: $screen-xxxl) {
+        @content;
+    }
+}
+
+@mixin bd-xxxl-bl {
+    @media screen and (max-width: $screen-xxxl - 1) {
+        @content;
+    }
+}
+
+@mixin bd-lg {
+    @media screen and (min-width: $screen-lg) {
+        @content;
+    }
+}
+
+@mixin bd-lg-bl {
+    @media screen and (max-width: $screen-lg - 1) {
+        @content;
+    }
+}
+
+@mixin bd-md {
+    @media screen and (min-width: $screen-md) {
+        @content;
+    }
+}
+
+@mixin bd-md-bl {
+    @media screen and (max-width: $screen-md - 1) {
+        @content;
+    }
+}
+
+@mixin bd-sm {
+    @media screen and (min-width: $screen-sm) {
+        @content;
+    }
+}
+
+@mixin bd-sm-bl {
+    @media screen and (max-width: $screen-sm - 1) {
+        @content;
+    }
+}
+
+@mixin bd-sm-md {
+    @media screen and (min-width: $screen-sm) and (max-width: $screen-md - 1) {
+        @content;
+    }
+}
+
+@mixin bd-custom-min($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin bd-custom-max($width) {
+    @media screen and (max-width: $width - 1) {
+        @content;
+    }
+}
+
+@mixin bd-bw($from, $to) {
+    @media screen and (min-width: $from) and (max-width: $to - 1) {
+        @content;
+    }
+}
+
+//2. Font-face mixin - for adding main fonts
+// Import main font
+@mixin font-face($style-name, $folder, $file, $family, $category:"") {
+    $filepath: $folder + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf") format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+    }
+    %#{$style-name} {
+        font: {
+            @if $category !="" {
+                family: "#{$style-name}",
+                #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+}
+
+//4. Calc
+@mixin calc($property, $expression) {
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
+}
+
+//-----------------usage------------------
+// p {
+//   @include prefix(hyphens, auto)
+// }
+//5. transtions and transforms 
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin transition-delay($prop) {
+    -webkit-transition-delay: #{$prop};
+    -moz-transition-delay: #{$prop};
+    -ms-transition-delay: #{$prop};
+    transition-delay: #{$prop};
+}
+
+@mixin transform($prop) {
+    -webkit-transform: #{$prop};
+    -moz-transform: #{$prop};
+    -ms-transform: #{$prop};
+    transform: #{$prop};
+}
+
+@mixin transform-origin($prop) {
+    -webkit-transform-origin: #{$prop};
+    -moz-transform-origin: #{$prop};
+    -ms-transform-origin: #{$prop};
+    transform-origin: #{$prop};
+}
+
+@mixin perspective($prop) {
+    -webkit-perspective: #{$prop};
+    -moz-perspective: #{$prop};
+    -ms-perspective: #{$prop};
+    perspective: #{$prop};
+}
+
+//6.  CSS flex magic
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-prop($prop-name, $prop-value) {
+    -webkit-#{$prop-name}: $prop-value;
+    -ms-#{$prop-name}: $prop-value;
+    -moz-#{$prop-name}: $prop-value;
+    #{$prop-name}: $prop-value;
+}
+
+@mixin align-items($value) {
+    -webkit-box-align: $value;
+    -moz-box-align: $value;
+    -webkit-align-items: $value;
+    -ms-flex-align: $value;
+    align-items: $value;
+}
+
+@mixin flex-flow($flow) {
+    -webkit-flex-flow: $flow;
+    -ms-flex-flow: $flow;
+    flex-flow: $flow;
+}
+
+@mixin justify-content($value) {
+    -webkit-box-pack: $value;
+    -moz-box-pack: $value;
+    -webkit-justify-content: $value;
+    -ms-flex-pack: $value;
+    justify-content: $value;
+}
+
+@mixin flex-value($value) {
+    -webkit-box-flex: $value;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: $value;
+    /* OLD - Firefox 19- */
+    -webkit-flex: $value;
+    /* Chrome */
+    -ms-flex: $value;
+    /* IE 10 */
+    flex: $value;
+}
+
+@mixin flex-wrap($value: nowrap) {
+    // No Webkit Box fallback.
+    -webkit-flex-wrap: $value;
+    -moz-flex-wrap: $value;
+    @if $value==nowrap {
+        -ms-flex-wrap: none;
+    }
+    @else {
+        -ms-flex-wrap: $value;
+    }
+    flex-wrap: $value;
+}
+
+//7. placeholder
+@mixin placeholder {
+    &.placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+//8.Prefix
+@mixin prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
+}
+
+//9. box shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+}
+
+//10. Opacity
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+//11. Animation keyframes
+// animations
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+//12. Backface - mixin
+@mixin backface-visibility($prop) {
+    -webkit-backface-visibility: #{$prop};
+    -moz-backface-visibility: #{$prop};
+    -ms-backface-visibility: #{$prop};
+    backface-visibility: #{$prop};
+}
+
+//13. Appearance
+@mixin appearance-none {
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+//14.clearfix
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+//15. Not last-child
+@mixin not-last-child($selector) {
+    & #{$selector}:not(:last-child) {
+        @content;
+    }
+}
+
+//16. Border radius shorthand
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+// // Placeholder text
+// @mixin placeholder($color: $input-color-placeholder) {
+//     // Firefox
+//     &::-moz-placeholder {
+//         color: $color;
+//         opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+//     }
+//     &:-ms-input-placeholder {
+//         color: $color;
+//     } // Internet Explorer 10+
+//     &::-webkit-input-placeholder {
+//         color: $color;
+//     } // Safari and Chrome
+// }
+@mixin fontSize($size) {
+    font-size: $size; // Fallback in px.
+    font-size: ($size / 16px) * 1rem;
+}
+
+// calc width
+@mixin calc($property, $expression) {
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
+}

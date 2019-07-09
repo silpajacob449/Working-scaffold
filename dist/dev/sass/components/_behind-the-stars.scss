@@ -1,0 +1,96 @@
+.banner .banner_cnt .banner_text.banner-left {
+    padding-left: 252px;
+
+    @include bd-custom-max(1100px) {
+        padding-left: 0px;
+    }
+}
+
+.behind-inner {
+    margin-top: -257px;
+    box-shadow: 0 2px 20px rgba(21, 24, 36, 0.16);
+    background-color: $clr-white;
+    position: relative;
+    padding: 60px 252px 90px;
+
+    h2 {
+        color: $clr-dark;
+    }
+
+    @include bd-custom-max(1100px) {
+        margin-top: 25px;
+        padding: 30px 25px 50px;
+    }
+
+
+
+}
+
+.behind-the-star {
+    padding-bottom: 114px;
+
+
+}
+
+
+#accordion {
+    margin-top: 35px;
+}
+
+.card {
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.tab-head {
+    border: 0;
+    background: transparent;
+    font-size: 22px;
+    font-family: 'Helvetica Bold';
+    outline: 0 !important;
+    padding: 0;
+}
+
+.card-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0 0px 15px;
+}
+
+.card-body {
+    padding: 23px 70px 23px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+    @include bd-custom-max(1100px) {
+        padding-right: 0px;
+    }
+
+}
+
+.tab-head {
+    width: 100%;
+    text-align: left;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: "";
+        height: 27px;
+        width: 27px;
+        right: 0;
+        background: url(../images/minus.png) no-repeat;
+        border: 1px solid #ff6b6b;
+        background-position: center center;
+        border-radius: 50%;
+        top: 28%;
+    }
+
+    &.collapsed {
+
+        &:after {
+            background: url(../images/plus.png) no-repeat;
+            background-position: center center;
+        }
+
+    }
+}

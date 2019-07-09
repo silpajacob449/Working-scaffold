@@ -1,0 +1,23 @@
+body {
+    overflow-x: hidden;
+}
+
+header {
+    .container {
+        @include bd-lg {
+            max-width: 1330px;
+        }
+    }
+}
+
+.container {
+    @include bd-lg {
+        max-width: 1292px;
+    }
+}
+
+.search_results {
+    &+.container {
+        margin-top: -92px;
+    }
+}

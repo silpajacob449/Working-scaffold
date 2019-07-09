@@ -1,0 +1,137 @@
+.banner-item .owl-dots {
+    bottom: 220px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    top: auto;
+    z-index: 999;
+
+    .owl-dot {
+        margin: 0px 5px;
+        display: inline-block;
+        vertical-align: middle;
+        transition: all .4s ease;
+
+        span {
+            border: 2px solid rgba(255, 107, 107, 0.56);
+            background-color: #ffffff;
+            padding: 4px;
+            border-radius: 50%;
+            display: block;
+        }
+
+        &.active {
+            span {
+                border: 5px solid $clr-red;
+            }
+        }
+    }
+
+}
+
+.banner-item .item {
+    position: relative;
+
+    &:after {
+        content: "";
+        background: linear-gradient(180deg, #b4d3e7 0, rgba(255, 255, 255, 0.27) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+}
+
+
+.booking-hotel {
+    margin-top: -188px;
+    position: relative;
+    background: #fff;
+    z-index: 9;
+    padding-top: 60px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.booking-wrap {
+    padding: 0px 252px;
+    text-align: center;
+
+    h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .ratings .star:before {
+        font-size: 47px;
+    }
+
+    h4 {
+        font-size: 15px;
+        color: #fec10e;
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
+.booking-outer {
+    margin-top: 17px;
+
+    ul {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0px 12px;
+            color: #484848;
+
+            img {
+                margin-right: 8px;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            .ratings .star {
+                margin: 0px 0px;
+
+                &:before {
+                    font-size: 13px;
+                    color: #000;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+.booking-now {
+    margin-top: 30px;
+}
+
+.cmn-btn{
+    color: #ffffff !important;
+    font-size: 16px;
+    min-height: 50px;
+    min-width: 119px;
+    text-align: center;
+    line-height:50px;
+    display: inline-block;
+    background-color: $clr-red;
+    cursor: pointer;
+    font-family: 'Helvetica Bold';
+    &:hover{
+        transition: all .4s ease;
+        background: #fd5656;
+    }
+}

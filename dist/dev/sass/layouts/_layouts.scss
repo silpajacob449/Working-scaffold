@@ -1,0 +1,9 @@
+
+body{
+
+}
+.container{
+    @include bd-lg{
+        max-width: 1330px;
+    }
+}

@@ -1,0 +1,75 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Helvetica LT W01 Bold';
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 1;
+
+    @include bd-lg-bl {
+        font-size: 65px;
+    }
+
+    @include bd-custom-max(960px) {
+        font-size: 50px;
+    }
+
+    @include bd-md-bl {
+        font-size: 40px;
+    }
+
+    @include bd-sm-bl {
+        font-size: 35px;
+    }
+
+    @include bd-custom-max(360px) {
+        font-size: 30px;
+    }
+}
+
+h2 {
+    font-size: 35px;
+    color: #102746;
+    @include bd-md-bl {
+        font-size: 32px;
+    }
+
+    @include bd-sm-bl {
+        font-size: 30px;
+    }
+
+    @include bd-custom-max(360px) {
+        font-size: 25px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+
+    @include bd-md-bl {
+        font-size: 25px;
+    }
+
+    @include bd-sm-bl {
+        font-size: 22px;
+    }
+}
+
+h4 {
+    font-size: 24px;
+
+    color: $clr-black;
+
+    @include bd-md-bl {
+        font-size: 22px;
+    }
+
+    @include bd-sm-bl {
+        font-size: 20px;
+    }
+}

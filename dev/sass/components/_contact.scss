@@ -1,0 +1,274 @@
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #484848;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #484848;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #484848;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #484848;
+}
+
+
+.contact-wrapper {
+    padding-bottom: 102px;
+    @include bd-md-bl{
+        padding-bottom: 30px;
+    }
+}
+
+.contactrow {
+    margin-top: 15px;
+    box-shadow: 0 2px 20px rgba(21, 24, 36, 0.16);
+    background-color: $clr-white;
+    position: relative;
+    margin-top: -257px;  
+    @include bd-custom-max(1100px){
+        margin-top: -167px;  
+    }
+    
+    
+}
+.map img {
+    width: 100%;
+}
+.contactrow-inner{
+    padding: 60px 252px 90px;
+    @include bd-xl-bl{
+        padding:30px 25px;
+    }
+    @include bd-lg-bl{
+        padding:25px 15px;
+    }
+    @include bd-sm-bl{
+        text-align: center;
+    }
+}
+
+.contact-head {
+    h2 {
+        font-size: 32px;
+        color: #102746;
+        margin-bottom: 35px;
+        line-height: 1.2;
+        @include bd-md-bl{
+            font-size: 30px;
+        }
+        @include bd-sm-bl{
+            font-size: 28px;
+        }
+        @include bd-custom-max(360px){
+            font-size: 25px;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+.form-head {
+    margin-top: 40px;
+
+    h4 {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+.input-control {
+    min-height: 55px;
+    width: 100%;
+    color: #484848;
+    font-size: 15px;
+    outline: 0;
+    padding: 14px 13px;
+    box-shadow: inherit;
+    resize: vertical;
+    border: 1px solid #d5d5d5;
+}
+
+
+
+.form-grp {
+    margin-bottom: 25px;
+    width: 100%;
+
+    &.form-grp-submit {
+        margin-bottom: 0;
+
+        input {
+            background-color: $clr-red;
+            color: $clr-white;
+            font-family: 'Helvetica LT W01 Bold';
+            border: 0;
+            padding: 9px 13px;
+            transition: all .4s ease;
+            outline: 0;
+
+            &:hover {
+                background:#fd5656;
+            }
+        }
+    }
+}
+
+textarea.input-control {
+    min-height: 131px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: -15px;
+    margin-right: -15px;
+    @include bd-md-bl{
+        margin-top:30px;
+    }
+}
+
+.ph-contact {
+    color: $clr-red;
+    font-size: 35px;
+    display: block;
+    font-family:'Helvetica LT W01 Bold';
+    text-decoration: none !important;
+    @include bd-md-bl{
+        font-size:25px;
+        margin:0;
+    }
+    
+}
+
+.mail-contact {
+    font-size: 22px;
+    text-decoration: underline !important;
+
+    &:hover {
+        color: $clr-red;
+    }
+
+}
+
+.contact-mail ul li {
+    display: inline-block;
+    margin-left: 8px;
+
+    a {
+        width: 32px;
+        height: 32px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 32px;
+        border: 2px solid #9f9f9f;
+        border-radius: 50%;
+        transition: all .4s ease;
+        font-size: 18px;
+        &:hover {
+            background: $clr-red;
+            color:$clr-white !important;
+            border-color: $clr-red;
+
+            i {
+                color: $clr-white;
+            }
+        }
+
+        i {
+            color: #9f9f9f;
+        }
+    }
+}
+.umbraco-forms-container {
+    input,
+    textarea {
+        min-height: 55px;
+        width: 100%;
+        color: #484848;
+        font-size: 15px;
+        outline: 0;
+        padding: 14px 13px;
+        -webkit-box-shadow: inherit;
+        -moz-box-shadow: inherit;
+        box-shadow: inherit;
+        resize: vertical;
+        border: 1px solid #d5d5d5;
+    }
+    textarea{
+        min-height: 131px;
+    }
+}
+.umbraco-forms-label {
+    display: none;
+}
+
+p.help-block {
+    display: none;
+}
+
+.umbraco-forms-field-wrapper {
+    margin-bottom: 27px;
+    padding: 0;
+}
+
+.umbraco-forms-container {
+    padding: 0;
+}
+
+
+
+.umbraco-forms-navigation {
+    display: inline-block;
+    .col-sm-offset-2 {
+        display: inline-block;
+        padding: 0;
+    }
+    input.btn.btn-primary {
+        background-color: #ff6b6b;
+        color: #fff;
+        font-family: 'Helvetica LT W01 Bold';
+        border: 0;
+        padding: 9px 13px;
+        -webkit-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        transition: all .4s ease;
+        outline: 0;
+        font-weight: 700;
+        font-size: 16px;
+
+    }
+}
+
+span.icon-copyrright {
+    img {
+        max-width: 20px;
+    }
+    
+}
+.contacts-adress,
+.contacts-block,
+.contacts-social{
+    @include bd-sm-bl{
+        width:100%;
+    }
+}

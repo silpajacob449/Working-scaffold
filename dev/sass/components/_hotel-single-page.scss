@@ -1,0 +1,238 @@
+.banner-item {
+    .owl-dots {
+
+        bottom: 120px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        top: auto;
+        z-index: 999;
+
+        @include bd-xl {
+            bottom: 220px;
+        }
+
+        .owl-dot {
+            margin: 0px 2px;
+            display: inline-block;
+            vertical-align: middle;
+            transition: all .4s ease;
+
+            span {
+                border: 2px solid rgba(255, 107, 107, 0.56);
+                background-color: #ffffff;
+                padding: 5px;
+                border-radius: 50%;
+                display: block;
+                margin: 2px;
+            }
+
+            &.active {
+                span {
+                    border: 5px solid #ff6b6b;
+                    width: 5px;
+                    height: 5px;
+                    padding: 4px;
+                    background: $clr-white;
+                }
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                span {
+                    background: $clr-white;
+                }
+            }
+        }
+
+    }
+}
+
+.banner-item .item {
+    position: relative;
+
+    &:after {
+        content: "";
+        background: linear-gradient(180deg, #b4d3e7 0, rgba(255, 255, 255, 0.27) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+}
+
+
+.booking-hotel {
+    margin-top: -100px;
+    position: relative;
+    background: #fff;
+    z-index: 9;
+    padding-top: 52px;
+    box-shadow: 0 2px 20px rgba(21, 24, 36, 0.16);
+
+    @include bd-xl {
+        margin-top: -188px;
+    }
+
+    @include bd-md-bl {
+        padding-top: 30px;
+    }
+    &>ul{
+        &.ratings{
+           height: 58px; 
+        }
+    }
+    .booking-wrap {
+        h2 {
+            margin-bottom: 0;
+        }
+
+    }
+    .booking-outer{
+        margin-top: 12px;
+        ul{
+            li{
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.booking-wrap {
+    text-align: center;
+    padding: 0px 25px 26px;
+    border-bottom: 1px solid #d5d5d5;
+
+    @include bd-lg {
+        padding: 0px 252px 26px;
+    }
+
+    h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+
+        @include bd-md-bl {
+            font-size: 35px;
+            margin-bottom: 0;
+        }
+
+        @include bd-sm-bl {
+            font-size: 30px;
+        }
+
+        @include bd-custom-max(360px) {
+            font-size: 25px;
+        }
+    }
+
+    .ratings {
+        .star {
+            &:before {
+                font-size: 47px;
+
+                @include bd-md-bl {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    h4 {
+        font-size: 15px;
+        color: #fec10e;
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
+.booking-outer {
+    margin-top: 17px;
+
+    ul {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+
+        @include bd-md-bl {
+            margin-left: 0;
+        }
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0px 8px;
+            color: #484848;
+            font-size: 15px;
+
+            img {
+                margin-right: 8px;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            .ratings .star {
+                margin: 0px 0px;
+
+                &:before {
+                    font-size: 17px;
+                    color: #000;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+.booking-now {
+    margin-top: 30px;
+}
+
+.cmn-btn {
+    color: #ffffff !important;
+    font-size: 16px;
+    min-height: 50px;
+    min-width: 119px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    background-color: $clr-red;
+    cursor: pointer;
+    font-family: 'Helvetica LT W01 Bold';
+
+    &:hover {
+        transition: all .4s ease;
+        background: #fd5656;
+    }
+}
+
+.hotel-single-wrap {
+    h3{
+        color: #191919;
+    }
+    .map {
+        margin-bottom: 110px;
+
+        @include bd-md-bl {
+            margin-bottom: 30px;
+        }
+    }
+
+    .grid.masonry {
+        margin: 40px -9px 115px;
+    }
+}
+
+* {
+    -webkit-backface-visibility: hidden;
+}

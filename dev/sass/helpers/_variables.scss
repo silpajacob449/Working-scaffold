@@ -1,0 +1,67 @@
+// paths 
+$image_path: "../images";
+$font_path: "../fonts";
+//color variables
+$clr-grey:#f6fbfd;
+$clr-dark: #191919;
+$clr-blue-dark:#102746;
+// other colors
+$clr-black:#000000;
+$clr-white:#ffffff;
+$clr-red:#ff6b6b;
+$clr-yellow:#fec10e;
+// fonts
+$helvetica: 'Helvetica LT W01 Roman',
+sans-serif;
+$work-sans-slab:'Work Sans',
+sans-serif;
+// =================Bootstrap overides==============================================
+// container widths
+$screen-sm: 540px;
+$screen-md: 768px;
+$screen-lg: 1025px;
+$screen-xl: 1302px;
+$screen-xxl: 1400px;
+$grid-breakpoints: ( xs: 0, sm: $screen-sm, md: $screen-md, lg: $screen-lg, xl: $screen-xl, xxl: $screen-xxl);
+$container-max-widths: ( sm: 100%, md: 100%, lg: 100%, xl: 1332px) !default;
+// ----------Generic--------------
+$body-bg:$clr-grey;
+$body-color: $clr-black;
+$headings-color:$clr-blue-dark;
+$headings-font-weight:500;
+$link-color:$clr-black;
+// $headings-font-family:$work-sans-slab;
+// fonts
+$font-family-base:$helvetica;
+// $line-height-base:1.7!default;
+$font-size-root: 16px;
+$font-size-root-tab: 14px;
+$font-size-root-mobile: 14px;
+$font-size-base: 1rem !default;
+$font-size-lg: .9rem!default;
+$font-size-sm: .875rem!default;
+$font-size-xs: .75rem!default;
+//-----------headings-------------
+$h1-font-size: $font-size-base * 2.187 !default;
+$h2-font-size: $font-size-base * 1.875 !default;
+$h3-font-size: $font-size-base * 1.562 !default;
+$h4-font-size: $font-size-base * 1.125 !default;
+$h5-font-size: $font-size-base * 1.2 !default;
+$h6-font-size: $font-size-base !default;
+html {
+    @include bd-lg {
+        font-size: $font-size-root;
+    }
+    @include bd-lg-bl {
+        font-size: $font-size-sm;
+    }
+}
+
+.container-fluid {
+    max-width: 1940px;
+}
+
+// $input-btn-padding-y:.42rem !default;
+// $input-btn-focus-box-shadow:none;
+// $input-border-radius:2px;
+$input-border-color:#919191;

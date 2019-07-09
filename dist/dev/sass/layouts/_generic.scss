@@ -1,0 +1,95 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+}
+h1{
+    font-size: 80px;
+    font-family: 'Helvetica Bold';
+    line-height: 1;
+    @include bd-lg-bl{
+        font-size: 65px;
+    }
+    @include bd-custom-max(960px){
+        font-size: 50px;
+    }
+    @include bd-custom-max(480px){
+        font-size: 40px;
+    }
+    @include bd-custom-max(360px){
+        font-size: 35px;
+    }
+}
+h2{
+    font-size: 35px;
+    font-family: 'Helvetica Bold';
+    @include bd-md-bl{
+        font-size: 32px;
+    }
+    @include bd-sm-bl{
+        font-size: 30px;
+    }
+}
+h3{
+    font-size: 28px;
+    font-family: 'Helvetica Bold';
+    @include bd-md-bl{
+        font-size: 25px;
+    }
+    @include bd-sm-bl{
+        font-size: 22px;
+    }
+}
+h4{
+    font-size: 24px;
+    font-family: 'Helvetica Bold';
+    color:$clr-black;
+    @include bd-md-bl{
+        font-size: 22px;
+    }
+    @include bd-sm-bl{
+        font-size: 20px;
+    }
+}
+.red_link{
+    color: $clr-red;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Helvetica Bold';
+    @include bd-md-bl{
+        font-size: 15px;
+    }
+    @include bd-sm-bl{
+        font-size: 14px;
+    }
+    &:hover{
+        text-decoration: none;
+    }
+    img{
+        padding: 0 10px 4px;
+    }
+}
+.btn-primary{
+    background-color: #ff6b6b;
+    font-size: 17px;
+    padding: 12px 30px;
+    float: left;
+    white-space: nowrap;
+    display:inline-block;
+    font-family: 'Helvetica Bold';
+    &:hover{
+        text-decoration: none;
+        background: #fd5656;
+    }
+}
+select {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat  #fff;
+    background-position: calc(100% - 15px) 50%;
+}
+img {
+    max-width: 100%;
+}

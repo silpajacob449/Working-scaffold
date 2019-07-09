@@ -1,0 +1,144 @@
+.logo-footer {
+    width: 15.5%;
+    padding: 25px 10px;
+    // margin-bottom: 40px;
+    @include bd-custom-max(1100px) {
+        width: 50%;
+        text-align: center;  
+    }
+    @include bd-md-bl{
+        width: 100%;
+    }
+}
+.address-block {
+    line-height: 28px;
+}
+.address-area {
+    width: 17.5%;
+    color: $clr-white;
+    padding:15px 10px 15px 27px;
+    @include bd-custom-max(1100px) {
+        width: 50%;
+        padding: 0 30px;
+    }
+    @include bd-md-bl{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+.bliv-area {
+    width: 33%;
+    padding:0px 0 0 26px;
+    @include bd-custom-max(1100px) {
+        width: 50%;
+    margin-top: 40px;
+    padding: 0;
+    &.bliv-gray {
+        padding-left: 15px;
+    }
+    
+    }
+    @include bd-md-bl{
+        width: 100%;
+        padding:0;
+        text-align: center;
+       
+    }
+}
+
+.footer-wrap {
+    background: #0e1d28;
+    padding:75px 0 70px 15px;
+    @include bd-custom-max(1100px) {
+        padding: 75px 10px 15px;
+    }
+    @include bd-md-bl{
+        padding:25px 15px;
+    }
+}
+
+.address-block p {
+    margin-bottom: 0;
+}
+
+
+.contact img {
+    margin-right: 6px;
+}
+
+.contact-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:5px;
+}
+
+.blive-inner {
+    padding:20px 50px 25px 43px;
+    background-color: #1691eb;
+    height: 100%;
+    p {
+        color: $clr-white;
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    
+}
+
+
+
+.read-more {
+    font-size: 16px;
+    border: 1px solid $clr-white;
+    padding: 7px 13px;
+    display: inline-block;
+    color: $clr-white;
+    transition: all .4s ease;
+    text-decoration: none;
+    &:hover{
+        color: $clr-white;
+        background: #0e1d28;
+        text-decoration: none;
+        border-color: transparent;
+    }
+}
+
+.read-block {
+    text-align: center;
+}
+
+
+
+.bag-inner {
+    text-align: center;
+    padding: 30px 45px;
+    height: 100%;
+    background-color: rgba(84, 84, 84, 0.82);
+    h3 {
+        color: $clr-white;
+        font-weight: normal;
+        margin-bottom: 22px;
+    }
+    ul li {
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.blive-inner h3 {
+    color: #fff;
+    font-weight: normal;
+}
+
+
+.footer-row { 
+    margin: 0px -10px;
+}
+.contact {
+    a{
+        color:$clr-white !important;
+    }
+}

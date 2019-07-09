@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('#{$font_path}/WorkSans-Regular.eot');
+    src: url('#{$font_path}/WorkSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('#{$font_path}/WorkSans-Regular.woff2') format('woff2'),
+    url('#{$font_path}/WorkSans-Regular.woff') format('woff'),
+    url('WorkSans-Regular.ttf') format('truetype'),
+    url('WorkSans-Regular.svg#WorkSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('#{$font_path}/WorkSans-Medium.eot');
+    src: url('#{$font_path}/WorkSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('#{$font_path}/WorkSans-Medium.woff2') format('woff2'),
+    url('#{$font_path}/WorkSans-Medium.woff') format('woff'),
+    url('#{$font_path}/WorkSans-Medium.ttf') format('truetype'),
+    url('#{$font_path}/WorkSans-Medium.svg#WorkSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('#{$font_path}/WorkSans-Black.eot');
+    src: url('#{$font_path}/WorkSans-Black.eot?#iefix') format('embedded-opentype'),
+    url('#{$font_path}/WorkSans-Black.woff2') format('woff2'),
+    url('#{$font_path}/WorkSans-Black.woff') format('woff'),
+    url('#{$font_path}/WorkSans-Black.ttf') format('truetype'),
+    url('#{$font_path}/WorkSans-Black.svg#WorkSans-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('#{$font_path}/WorkSans-Bold.eot');
+    src: url('#{$font_path}/WorkSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$font_path}/WorkSans-Bold.woff2') format('woff2'),
+    url('#{$font_path}/WorkSans-Bold.woff') format('woff'),
+    url('#{$font_path}/WorkSans-Bold.ttf') format('truetype'),
+    url('#{$font_path}/WorkSans-Bold.svg#WorkSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url('#{$font_path}/Helvetica Bold.eot');
+    src: url('#{$font_path}/Helvetica Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$font_path}/Helvetica Bold.woff2') format('woff2'),
+    url('#{$font_path}/Helvetica Bold.woff') format('woff'),
+    url('#{$font_path}/Helvetica Bold.ttf') format('truetype'),
+    url('#{$font_path}/Helvetica Bold.svg#Helvetica Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

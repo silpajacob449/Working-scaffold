@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <title>Serio Verify</title>
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900" rel="stylesheet">
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="//unpkg.com/element-ui@2.7.2/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>
+    <!--Start: Browser update alert -->
+    <!--[if lt IE 10]>
+           <div class="browser-update">
+           <div class="update-info-wrap">
+           <img src="./images/logo.svg" alt="">
+           <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+           </div>
+            </div>
+    <![endif]-->
+    <!-- End: Browser update alert -->
+    <main class="main-wrapper">
+        <!-- Header:start -->
+        <header class="main-header bg-gradient-one d-flex">
+            <!-- mobile menu -->
+            <div class="menu-toggle">Menu</div>
+            <!-- logo -->
+            <div class="header-logo-hold">
+                <a href="#" class="logo">
+                    <img src="images/logo.svg" alt="Serio Verify">
+                </a>
+            </div>
+            <div class="header-container-block">
+                <div class="search-box">
+                    <form action="#" class="search-box--form">
+                        <input type="search" class="search-box--input form-control" placeholder="Type in to Search...">
+                    </form>
+                </div>
+                <!-- right side -->
+                <div class="header-right d-flex justify-content-end">
+                    <div class="header-right--logo">
+                        <a href="#">
+                            <img src="images/orsted-logo-white.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="user-info d-flex justify-content-end">
+                        <div class="avatar-name">
+                            <h5>John Mayer, Administrator</h5>
+                        </div>
+                        <div class="dropdown dropdown-content--right">
+                            <div id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="avatar">
+                                    <img src="images/avatar.png" alt="avatar">
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header:end -->
+<div class="content-wrapper">
+    <!-- start:sidebar -->
+    <aside class="site-sidebar">
+        <ul class="lsit-unstyled sidebar-ul">
+            <li><a href="#" class="active"><i class="icon"><img src="images/icon-dashboard.png" alt=""></i><span>Dashboard</span></a></li>
+            <li><a href="#"><i class="icon"><img src="images/icon-star.png" alt=""></i><span>Leads</span></a></li>
+            <li><a href="#"><i class="icon"><img src="images/icon-campaign.png" alt=""></i><span>Campaigns</span></a></li>
+            <li><a href="#"><i class="icon"><img src="images/icon-product.png" alt=""></i><span>Products</span></a></li>
+            <li><a href="#"><i class="icon"><img src="images/icon-import.png" alt=""></i><span>Import</span></a></li>
+            <li><a href="#"><i class="icon"><img src="images/icon-export.png" alt=""></i><span>Export</span></a></li>
+            <li><a href="#"><i class="icon"><img src="images/icon-user.png" alt=""></i><span>Users</span></a></li>
+            <li><a href="#"><i class="icon"><img src="images/icon-log.png" alt=""></i><span>Logs</span></a></li>
+        </ul>
+    </aside>
+    <!-- start:sidebar -->
+    <!-- start:article contents -->
+    <article class="main-article">
+        <div class="container-inner">
+            <!-- content blocks -->
+            <div class="content-block max-width-857">
+                <!-- Heading section -->
+                <div class="el-row padding-bottom-26">
+                    <div class="el-col el-col-14">
+                        <h3>Lead Summary</h3> <button type="button" class="el-button btn-primary el-button--default">
+                            <span>Edit Lead
+                            </span></button>
+                        <button type="button" class="el-button el-button--default">
+                            <span>View revisions</span>
+                        </button>
+                    </div>
+                    <div class="text-right el-col el-col-10">
+                        <div class="el-dropdown"><button type="button" class="el-button el-button--default el-button--default el-dropdown-selfdefine" aria-haspopup="list" aria-controls="dropdown-menu-5117" role="button" tabindex="0"><span>Export<i class="el-icon-caret-bottom el-icon--right"></i></span></button> </div>
+                    </div>
+                </div>
+                <!-- two column contents -->
+                <div class="row">
+                    <!-- first col -->
+                    <div class="col-md-6 col-xl-7 col-sm-6">
+                        <div class="boxed-content padding-top-bottom2">
+                            <div class="basic-info ">
+                                <div class="basic-info__item">
+                                    <label for="#">Campaign name</label>
+                                    <span>Lead Generation</span>
+                                </div>
+                                <div class="basic-info__item">
+                                    <label for="ID">Campaign ID</label>
+                                    <span>5685620</span>
+                                </div>
+                                <div class="basic-info__item">
+                                    <label for="ID">Created by</label>
+                                    <span>Johny Depp</span>
+                                </div>
+                                <div class="basic-info__item">
+                                    <label for="ID">Created at</label>
+                                    <span>25/08/2018</span>
+                                </div>
+                                <div class="basic-info__item">
+                                    <label for="ID">Verify CID number</label>
+                                    <span>65461315</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second col -->
+                    <div class="col-md-6 col-xl-5 col-sm-6">
+                        <div class="boxed-content padding-top-bottom1">
+                            <div class="align-center">
+                                <div class="info-with-icon align-vertical">
+                                    <div class="icon-hold bg-green-light">
+                                        <i class="icon icon-star"><img src="images/icon-star-green.png" alt="image"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h1>2152</h1>
+                                        <p>Number of active leads</p>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <span class="info-progress green">
+                                        <i class="arrow-up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="8"><path fill="#279c20" d="M5.225 0L0 8h11z"/></svg></i> 112.71%
+                                    </span>
+                                    <p>Last 30 days</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content blocks -->
+            <div class="content-block max-width-857">
+                <h3>Channel type</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="boxed-content padding-top-bottom2 check-box-group">
+                            <div class="form-group checkbox">
+                                <input class="form-check-input" type="checkbox" id="checkbox1" name="checkbox">
+                                <label class="form-check-label" for="checkbox1">SMS</label>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input class="form-check-input" type="checkbox" id="checkbox2" name="checkbox">
+                                <label class="form-check-label" for="checkbox2">Email</label>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox">
+                                <label class="form-check-label" for="checkbox3">Telephone</label>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input class="form-check-input" type="checkbox" id="checkbox4" name="checkbox">
+                                <label class="form-check-label" for="checkbox4">Letter</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- side bar edit -->
+    <div class="off-canvas-box">
+        <header class="box-header">
+            <h3>Edit user</h3>
+            <div class="hamburger" onclick="this.classList.toggle('open')">
+                <img src="images/clear.png" alt="">
+            </div>
+        </header>
+        <div class="box-wrap">
+            <form action="#">
+                <div class="padding-type-one">
+                    <div class="form-group">
+                        <label for="#">ID</label>
+                        <input type="text" class="form-control" id="#" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="#">Name</label>
+                        <input type="text" class="form-control" id="#" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="#">Lead name</label>
+                        <input type="text" class="form-control" id="#" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="#">Created by</label>
+                        <input type="text" class="form-control" id="#" placeholder="Password">
+                    </div>
+                </div>
+                <div class="box-with-bg">
+                    <div class="padding-type-one">
+                        <div class="form-group">
+                            <label for="#">Status</label>
+                            <div>
+                                <div class="radiobox">
+                                    <input type="radio" id="radio1" name="radio" />
+                                    <label for="radio1">Active</label>
+                                </div>
+                                <div class="radiobox">
+                                    <input type="radio" id="radio2" name="radio" />
+                                    <label for="radio2">Block</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-with-bg">
+                    <div class="padding-type-one">
+                        <div class="form-group">
+                            <label for="#">Permission type</label>
+                            <div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="sms" name="sms" value="sms">
+                                    <label for="sms">SMS</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="email" name="email" value="email">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="telephone" name="telephone" value="telephone">
+                                    <label for="telephone">Telephone</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="letter" name="letter" value="letter">
+                                    <label for="letter">Letter</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding-type-one">
+                    <div class="green_btn">Save campaign and import leads</div>
+                </div>
+            </form>
+            <!-- <div class="colored-box">
+                        <div class="tag-cloud">
+                            <span class="tag">Import ID</span>
+                        </div>
+                    </div> -->
+        </div>
+    </div>
+</div>
+</main>
+<!-- scripts -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
